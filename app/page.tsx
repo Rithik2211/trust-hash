@@ -1,9 +1,11 @@
 import Image from "next/image";
+import HeaderTitle from "./pages/header/page";
 
 export default function Home() {
   return (
-    <div className="text-white flex justify-center items-center h-screen w-full">
-      <h1>Hello Trust hash</h1>
+    <div className="text-white flex flex-col justify-center items-center h-full w-full">
+      <HeaderTitle />
+      <HeaderTitle />
     </div>
   );
 }
