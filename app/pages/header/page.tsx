@@ -5,7 +5,7 @@ const HeaderTitle = () => {
     const description = 'Secure, transparent and efficient solutions for the digital age. Harness the power of blockchain technology to transform your operations.'
   return (
     <div className='flex flex-row justify-center items-center w-full h-screen text-white px-4'>
-        <div className='flex flex-col text-center justify-center items-center gap-4 w-full h-screen mt-[-60px]'>
+        <div className='flex flex-col text-center justify-center items-center gap-4 w-full h-screen'>
             <h1 className='text-[55px] font-bold text-green-500'> Revolutionize Your Bussiness with Blockchain</h1>
             <p className='text-[22px] font-medium px-4 mx-2'>{description}</p>
         </div>

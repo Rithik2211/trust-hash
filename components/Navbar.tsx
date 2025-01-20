@@ -2,9 +2,9 @@ import React from 'react'
 import { Button } from './ui/button';
 
 const Navbar = () => {
-    const navPages = ['Home', 'About', 'Services', 'Products']
+    const navPages = ['Home', 'Features', 'Services', 'Products']
   return (
-    <div className='flex flex-row h-[70px] w-full backdrop-blur justify-around items-center text-white sticky top-0 left-0'>
+    <div className='flex flex-row h-[70px] w-full backdrop-blur justify-around items-center text-white fixed top-0 left-0 z-10'>
         <div className=''>
             <h1 className='text-[25px] font-bold'>Trust Hash</h1>
         </div>
