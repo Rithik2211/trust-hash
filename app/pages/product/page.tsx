@@ -22,11 +22,11 @@ const Product = () => {
   ];
 
   return (
-    <div className='flex flex-col justify-center items-center w-full h-screen text-white gap-5'>
-      <div className='flex text-center justify-center items-center w-full'>
-        <h1 className='text-[45px] font-semibold'>Why Choose Our Blockchain Solutions ?</h1>
+    <div className='flex flex-col justify-center items-center w-full h-full md:h-screen text-white gap-5'>
+      <div className='flex text-center justify-center items-center w-full px-4 pb-[50px]'>
+        <h1 className='text-[35px] md:text-[45px] font-semibold'>Why Choose Our Blockchain Solutions ?</h1>
       </div>
-      <div className='flex flex-row justify-around items-center gap-5 mx-4 text-white'>
+      <div className='flex flex-row justify-evenly items-center gap-5 mx-4 w-screen flex-wrap text-white'>
         {cards.map((card, index) => (
           <Card key={index} className="flex flex-col w-[350px] bg-[#16181a] text-white">
             <CardHeader>

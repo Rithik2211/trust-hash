@@ -68,7 +68,7 @@ const ContactUs = () => {
     };
 
   return (
-    <div className='flex flex-col md:flex-row justify-between  items-center w-full min-h-screen p-5 text-white'>
+    <div className='flex flex-col md:flex-row justify-between items-center w-full max-h-screen px-5 text-white'>
         {/* Image container */}
         <div className='hidden md:flex justify-center items-center w-full md:w-1/2 lg:w-[650px] h-[300px] md:h-screen p-4'>
             <Image 
