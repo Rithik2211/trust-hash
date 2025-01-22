@@ -21,7 +21,7 @@ const steps = [
 
 const Work = () => {
 return(
-    <section className="mb-16 mx-[12px]">
+    <section className="flex flex-col justify-center items-center w-full h-full text-white gap-5 px-6 py-[40px]">
     <h2 className="text-3xl font-semibold text-center mb-8 text-white">How It Works</h2>
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
       {steps.map((step, index) => (
