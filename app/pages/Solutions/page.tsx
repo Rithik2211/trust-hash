@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle, Layers, Zap } from "lucide-react"
+import { CheckCircle, Layers, Zap } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 const solutions = [
     {
@@ -25,22 +25,24 @@ const Solution=()=>{
 
 return (
 
-    <section className="mb-16">
-          <h2 className="text-3xl font-semibold text-center mb-8 text-white">Our Core Services</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {solutions.map((solution, index) => (
-              <Card key={index} className="bg-gray-800 border-gray-700">
-                <CardHeader>
-                  <div className="mb-2">{solution.icon}</div>
-                  <CardTitle className="text-white">{solution.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-gray-400">{solution.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
+    <div className="flex flex-col justify-center items-center w-full h-full md:h-screen text-white gap-[20px] px-6 py-[40px]">
+      <div className="flex text-center justify-center items-center w-full px-4 pb-[50px]">
+        <h2 className="text-[35px] md:text-[45px] font-semibold">Our Core Services</h2>
+      </div>
+      <div className="flex flex-row justify-evenly items-center w-screen flex-wrap gap-8">
+        {solutions.map((solution, index) => (
+          <Card key={index} className="bg-gray-800 border-gray-700 w-[350px]">
+            <CardHeader>
+              <div className="mb-2">{solution.icon}</div>
+              <CardTitle className="text-white">{solution.title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="text-gray-400">{solution.description}</CardDescription>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
 )
 
 }
