@@ -1,19 +1,19 @@
-import About from "./pages/about/page";
-import ContactUs from "./pages/contact-us/page";
-import Footer from "./pages/footer/page";
-import HeaderTitle from "./pages/header/page";
-import Product from "./pages/product/page";
-import Solution from "./pages/Solutions/page";
-import Work from "./pages/work/page";
+// import About from "./pages/About";
+import ContactUs from "./pages/ContactUS";
+import Footer from "./pages/Footer";
+import HeaderTitle from "./pages/Header";
+import Product from "./pages/Product";
+import Solution from "./pages/Solutions";
+import Work from "./pages/Work";
 
 export default function Home() {
   return (
     <div className="text-white flex flex-col justify-center items-center h-full w-full">
-      <HeaderTitle />
-      <Product />
-      <Solution />
-      <Work />
-      <ContactUs />
+      <HeaderTitle id="header" />
+      <Product id="product" />
+      <Solution id="solution" />
+      <Work id="work" />
+      <ContactUs id="contact-us" />
       <Footer />
     </div>
   );

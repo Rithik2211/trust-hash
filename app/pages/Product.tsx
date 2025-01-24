@@ -2,7 +2,7 @@ import React from 'react';
 import { Shield, Gauge, Search } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
-const Product = () => {
+const Product = ({ id }: { id?: string }) => {
   const cards = [
     {
       icon: Shield,
@@ -22,7 +22,7 @@ const Product = () => {
   ];
 
   return (
-    <div className='flex flex-col justify-center items-center w-full h-full md:h-screen text-white gap-5'>
+    <div id={id} className='flex flex-col justify-center items-center w-full h-full md:h-screen text-white gap-5'>
       <div className='flex text-center justify-center items-center w-full px-4 pb-[50px]'>
         <h1 className='text-[35px] md:text-[45px] font-semibold'>Why Choose Our Blockchain Solutions ?</h1>
       </div>
