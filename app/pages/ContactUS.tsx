@@ -10,7 +10,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { ToastAction } from '@/components/ui/toast';
 
-const ContactUs = () => {
+const ContactUs = ({ id }: { id?: string }) => {
     const { toast } = useToast()
     const profession = ['Student', 'Developer', 'Bussiness people', 'Entrepreneur', 'Finance Sector', 'Other']
 
@@ -68,7 +68,7 @@ const ContactUs = () => {
     };
 
   return (
-    <div className='flex flex-col md:flex-row justify-between items-center w-full max-h-screen px-5 text-white'>
+    <div id={id} className='flex flex-col md:flex-row justify-between items-center w-full max-h-screen px-5 text-white'>
         {/* Image container */}
         <div className='hidden md:flex justify-center items-center w-full md:w-1/2 lg:w-[650px] h-[300px] md:h-screen p-4'>
             <Image 
