@@ -9,8 +9,9 @@ const Navbar = () => {
 
     const navPages = [
         { name: 'Products', id: 'product' }, 
-        { name: 'Features', id: 'solution' }, 
-        { name: 'Services', id: 'work' }, 
+        { name: 'Services', id: 'services' }, 
+        { name: 'Market Adoptation', id: 'market' }, 
+        { name: 'Our Culture', id: 'culture' }, 
     ];
 
     const scrollToSection = (sectionId: string) => {
@@ -18,19 +19,19 @@ const Navbar = () => {
         if (section) {
             section.scrollIntoView({ 
                 behavior: 'smooth', 
-                block: 'start' 
+                block: 'start',
             });
         }
     };
 
   return (
-    <div className='flex flex-row h-[70px] max-w-screen w-full backdrop-blur justify-around items-center text-white fixed top-0 left-0 z-10 '>
+    <div className='flex flex-row h-[70px] max-w-screen w-full backdrop-blur justify-between items-center text-white fixed top-0 left-0 z-10 px-6'>
         <div className='flex flex-row justify-center items-center text-center' onClick={() => scrollToSection('header')}>
             <Image src={'/trust-hash.png'} width={100} height={100} alt='logo' />
             <h1 className='text-[20px] md:text-[25px] font-bold'>Trust Hash</h1>
         </div>
         <div className='hidden md:block'>
-            <div className='flex flex-row font-semibold'>
+            <div className='flex flex-row font-semibold gap-4'>
                 {navPages.map((page, index) => (
                     <div 
                         key={index} 
@@ -40,17 +41,15 @@ const Navbar = () => {
                         {page.name}
                     </div>
                 ))}
+                <Button variant="outline" className='bg-green-500 text-black font-semibold rounded-[8px] ring-black border-none' onClick={() => scrollToSection('contact-us')}>Contact Us</Button>
             </div>
-        </div>
-        <div className='hidden md:block'>
-            <Button variant="outline" className='bg-[#55e794] text-black font-semibold rounded-[20px] ring-black' onClick={() => scrollToSection('contact-us')}>Contact Us</Button>
         </div>
         <div className='md:hidden'>
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
                 <Image src={'/hamburger.png'} width={40} height={40} alt='logo' />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56">
+            <DropdownMenuContent className="w-46">
                 <DropdownMenuLabel className='text-center'>Trust Hash</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup className='text-center flex flex-col justify-center items-center'>

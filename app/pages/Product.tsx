@@ -28,7 +28,7 @@ const Product = ({ id }: { id?: string }) => {
       </div>
       <div className='flex flex-row justify-evenly items-center gap-5 mx-4 w-screen flex-wrap text-white'>
         {cards.map((card, index) => (
-          <Card key={index} className="flex flex-col w-[350px] bg-[#16181a] text-white">
+          <Card key={index} className="flex flex-col w-[350px] bg-[#16181a] text-white  hover:border-green-500 dark:hover:border-green-500">
             <CardHeader>
               <div className="mb-4">
                 <card.icon className="w-12 h-12 text-green-600" />

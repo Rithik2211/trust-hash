@@ -81,11 +81,11 @@ const ContactUs = ({ id }: { id?: string }) => {
         </div>
 
         {/* Card container */}
-        <div className='flex justify-center items-center w-full md:w-1/2 px-4 py-8 md:py-0'>
+        <div className='flex justify-center items-center w-full md:w-1/2 px-2 py-4 md:py-0'>
             <Card className="w-full max-w-[450px] text-white bg-[#16181a] border-none">
                 <CardHeader>
-                    <CardTitle className='text-xl md:text-[25px]'>Get In Touch !</CardTitle>
-                    <CardDescription className='text-gray-300'>
+                    <CardTitle className='text-[43px]'>Get In Touch !</CardTitle>
+                    <CardDescription className='text-gray-300 font-semibold'>
                         Make Magic With a Single Click.
                     </CardDescription>
                 </CardHeader>
