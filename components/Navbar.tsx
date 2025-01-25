@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <div className='flex flex-row h-[70px] max-w-screen w-full backdrop-blur justify-between items-center text-white fixed top-0 left-0 z-10 px-6'>
-        <div className='flex flex-row justify-center items-center text-center' onClick={() => scrollToSection('header')}>
+        <div className='flex flex-row justify-center items-center text-center cursor-pointer' onClick={() => scrollToSection('header')}>
             <Image src={'/trust-hash.png'} width={100} height={100} alt='logo' />
             <h1 className='text-[20px] md:text-[25px] font-bold'>Trust Hash</h1>
         </div>
@@ -36,7 +36,7 @@ const Navbar = () => {
                     <div 
                         key={index} 
                         onClick={() => scrollToSection(page.id)}
-                        className='px-4 py-2 font-semibold hover:text-white'
+                        className='px-4 py-2 font-semibold hover:text-white cursor-pointer'
                     >
                         {page.name}
                     </div>
