@@ -1,49 +1,24 @@
 import React from 'react';
-import { Hammer, Layers,Leaf, Globe, CheckCircle, Rocket,BookOpen, ShieldCheck, } from 'lucide-react';
+import { Shield, Gauge, Search } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Product = ({ id }: { id?: string }) => {
   const cards = [
     {
-      icon: Hammer,
-      title: "Tailored for Your Business",
-      description: "We craft customized blockchain solutions to meet your unique business needs, ensuring seamless integration and maximum impact.",
+      icon: Shield,
+      title: "Enhanced Security",
+      description: "Secure your business with immutable ledger technology, and decentralized data storage.",
     },
     {
-      icon: Layers,
-      title: "Multi-Industry Expertise",
-      description: "From finance to textiles, healthcare to supply chain, we deliver versatile blockchain solutions for diverse industries.",
+      icon: Gauge,
+      title: "Improved Efficiency",
+      description: "Accelerate your operations with automated smart contracts and distributed processing.",
     },
     {
-      icon: Globe,
-      title: "Regional Language Support",
-      description: "Breaking barriers with multilingual support, making blockchain accessible to all regions and audiences.",
-    },
-    {
-      icon: CheckCircle,
-      title: "End-to-End Services",
-      description: "From consultation to development and ongoing support, we’re with you every step of the way.",
-    },
-    {
-      icon: Rocket,
-      title: "Future-Ready Solutions",
-      description: "Stay ahead of the curve with our innovative, sustainable, and scalable blockchain technologies.",
-    },
-    {
-      icon: BookOpen,
-      title: "Empowering Knowledge",
-      description: "We provide workshops and resources to simplify blockchain and Web3 adoption, empowering your team with the skills they need.",
-    },
-    {
-      icon: ShieldCheck,
-      title: "Trusted Expertise",
-      description: "Led by industry pioneers, we bring experience and a proven track record to transform your business with blockchain.",
-    },
-    {
-      icon: Leaf,
-      title: "Sustainability-Focused",
-      description: "Align your operations with eco-friendly practices and leverage blockchain for a greener tomorrow.",
-    },
+      icon: Search,
+      title: "Transparent Operations",
+      description: "Achieve unprecedented transparency with our immutable blockchain ledger.",
+    }
   ];
 
   return (

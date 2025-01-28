@@ -1,23 +1,23 @@
-import { Code,Lightbulb,TrendingUp } from "lucide-react"
+import { CheckCircle, Layers, Zap } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 const solutions = [
     {
-      icon: <Code className="h-8 w-8 text-green-600" />,
-      title: "Custom Blockchain Development",
+      icon: <Zap className="h-8 w-8 text-green-600" />,
+      title: "Seamless Adoption",
       description:
-        "Create bespoke blockchain solutions like NFTs, smart contracts, and decentralized apps tailored to your unique business needs.",
+        "We make blockchain adoption seamless for businesses, modernizing operations and keeping them ahead of the curve.",
     },
     {
-      icon: <Lightbulb className="h-8 w-8 text-green-600" />,
-      title: "  Blockchain Integration & Consulting",
+      icon: <Layers className="h-8 w-8 text-green-600" />,
+      title: "Tailored Solutions",
       description:
-        "Simplify blockchain adoption with seamless system integration and expert consultations, empowering your business to innovate and grow.",
+        "We unlock new revenue opportunities by designing blockchain solutions tailored to your specific business needs.",
     },
     {
-      icon: <TrendingUp className="h-8 w-8 text-green-600" />,
-      title: "Revenue Growth with Blockchain",
+      icon: <CheckCircle className="h-8 w-8 text-green-600" />,
+      title: "Education & Support",
       description:
-        "Unlock new revenue streams by implementing innovative blockchain-based business models designed for scalability and success.",
+        "We educate businesses through workshops, resources, and consultations, empowering them with essential blockchain knowledge.",
     },
   ]
 
