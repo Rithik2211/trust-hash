@@ -44,7 +44,7 @@ const Solution=({ id }: { id?: string })=>{
 
 return (
 
-    <div id={id} className="flex flex-col justify-center items-center w-full h-full md:h-screen text-white gap-[20px] px-6 py-[40px] my-[40px]">
+    <div id={id} className="flex flex-col justify-center items-center w-full h-full  text-white gap-[20px] px-6 py-[40px] my-[40px]">
       <div className="flex text-center justify-center items-center w-full px-4 pb-[50px]">
         <h2 className="text-[35px] md:text-[45px] font-semibold">Our Core Services</h2>
       </div>

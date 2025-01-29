@@ -41,7 +41,7 @@ const Culture = ({ id }: { id?: string }) => {
     }
   ]
   return (
-    <div id={id} className='flex justify-center items-center w-full h-full md:h-screen text-white mt-4'>
+    <div id={id} className='flex justify-center items-center w-full h-full  text-white mt-4'>
       <div className='max-w-6xl mx-5 px-4 md:px-6 lg:px-8 py-20'>
         <h1 className='text-[56px] font-bold mb-8'>Our Culture</h1>
         <p className='text-[30px] mb-12 text-[#e3e6eb]'>What we believe in, What we strive to achieve.</p>
