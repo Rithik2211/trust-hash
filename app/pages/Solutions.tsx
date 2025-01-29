@@ -1,23 +1,23 @@
-import { CheckCircle, Layers, Zap } from "lucide-react"
+import { Code,Lightbulb,TrendingUp } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 const solutions = [
     {
-      icon: <Zap className="h-8 w-8 text-green-600" />,
-      title: "Seamless Adoption",
+      icon: <Code className="h-8 w-8 text-green-600" />,
+      title: "Custom Blockchain Development",
       description:
-        "We make blockchain adoption seamless for businesses, modernizing operations and keeping them ahead of the curve.",
+        "Create bespoke blockchain solutions like NFTs, smart contracts, and decentralized apps tailored to your unique business needs.",
     },
     {
-      icon: <Layers className="h-8 w-8 text-green-600" />,
-      title: "Tailored Solutions",
+      icon: <Lightbulb className="h-8 w-8 text-green-600" />,
+      title: "  Blockchain Integration & Consulting",
       description:
-        "We unlock new revenue opportunities by designing blockchain solutions tailored to your specific business needs.",
+        "Simplify blockchain adoption with seamless system integration and expert consultations, empowering your business to innovate and grow.",
     },
     {
-      icon: <CheckCircle className="h-8 w-8 text-green-600" />,
-      title: "Education & Support",
+      icon: <TrendingUp className="h-8 w-8 text-green-600" />,
+      title: "Revenue Growth with Blockchain",
       description:
-        "We educate businesses through workshops, resources, and consultations, empowering them with essential blockchain knowledge.",
+        "Unlock new revenue streams by implementing innovative blockchain-based business models designed for scalability and success.",
     },
   ]
 
@@ -44,7 +44,7 @@ const Solution=({ id }: { id?: string })=>{
 
 return (
 
-    <div id={id} className="flex flex-col justify-center items-center w-full h-full md:h-screen text-white gap-[20px] px-6 py-[40px] my-[40px]">
+    <div id={id} className="flex flex-col justify-center items-center w-full h-full  text-white gap-[20px] px-6 py-[40px] my-[40px]">
       <div className="flex text-center justify-center items-center w-full px-4 pb-[50px]">
         <h2 className="text-[35px] md:text-[45px] font-semibold">Our Core Services</h2>
       </div>

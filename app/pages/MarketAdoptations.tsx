@@ -29,9 +29,9 @@ const MarketAdaption = ({ id }: { id?: string }) => {
     },
   ]
     return (
-      <div id={id} className="w-full h-full md:h-screen text-white ">
+      <div id={id} className="w-full h-full  text-white ">
         <div className="flex flex-col justify-between items-center p-6 md:p-12">
-          <h2 className="text-3xl sm:text-[55px] font-bold text-[#fff] pb-[50px]">Market Adaption</h2>
+          <h2 className="text-3xl sm:text-[55px] font-bold text-[#fff] pb-[50px]">Market versatility</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 w-full text-black ">
             {market.map((item, index) => (
               <div key={index} className="relative group overflow-hidden rounded-[20px] shadow-md h-[250px]">
